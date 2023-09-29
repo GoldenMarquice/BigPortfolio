@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} About Me {% endblock title %}
+
+{% block content %}
+
+<section class="about-section" id="aboutme">
+    <div class="img-container center">
+        <img id="about-img" src="{% static '/img/MyLogo.jpeg' %}" alt="a" />
+    </div>
+
+    <div class="description-container center">
+        <h1>FrontEnd Developer</h1>
+
+        <br />
+
+        <p>
+            This is Marquice Bowman, a Developing Software Developer with
+            expertise in Java, Python, and Django. I am currently pursuing a Full
+            Stack Java Certification from San Diego Global Knowledge University
+            and Claim Academy. My educational background includes a Master of
+            Science in Finance from the University of Utah and a Bachelor of
+            Science in Management from Embry Riddle Aeronautical University. I've
+            also gained valuable experience in roles like Premium Audit Field
+            Auditor, Team Lead for SBA Loan Processing, SBA Commercial SBA
+            Underwriter, Senior Underwriter, and Financial Advisor. My career
+            journey also led me to the Securities and Exchange Commission and the
+            United States Marine Corps. My skill set includes CSS, HTML, Java,
+            JavaScript, Python/Django, and more.
+            <br />
+            <br />
+            Outside of work, I'm passionate about football, basketball, sports,
+            finance, business ventures, video games, and cars.
+        </p>
+        <br />
+
+        <div class="skills-list center">
+            <h2>Skills</h2>
+
+            <div class="skills center">
+                <label for="">HTML</label>
+                <label for="">CSS</label>
+                <label for="">Java</label>
+                <label for="">JavaScript</label>
+                <label for="">Node</label>
+                <label for="">Phyton</label>
+                <label for="">Django</label>
+                <label for="">MongoDB</label>
+                <label for="">API'S</label>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

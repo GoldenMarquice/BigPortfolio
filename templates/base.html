@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/base.css'%}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="{% static 'css/section.css'%}">
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+    <title> {% block title %} {% endblock %}</title>
+</head>
+<body>
+    <header class="center">
+        <div class="logo center">
+            <a title="main" href="{% url 'home' %}">
+                <img src="{% static '/img/MyLogo.jpg' %}" alt="" />
+            </a>
+        </div>
+
+        <nav aria-label="nav">
+            <input title="check" type="checkbox" id="nav-check" />
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-link center">
+                <a title="About Me" href="{% url 'home' %}">About Me</a>
+                <a title="Projects" href="#projects">Projects</a>
+                <a title="Experience" href="#experience">Experience</a>
+                <a title="Contact" href="{% url 'contact'%}">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <footer class="center">
+        <h2> Marquice Bowman</h2>
+
+        <div class="logo center">
+            <a title="logo" href="{% url 'home' %}">
+                <img src="{% static '/img/MyLogo.jpg' %}" alt="" />
+            </a>
+        </div>
+
+        <nav aria-label ="center">
+            <a href="{% url 'home'%}">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="{% url 'contact'%}">Contact</a>
+        </nav>
+    </footer>
+</body>
+</html>

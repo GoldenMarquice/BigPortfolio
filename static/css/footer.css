@@ -1,0 +1,32 @@
+footer{
+    background-color: var(--header-color);
+    height: 20rem;
+    /* margin-top: 4rem; */
+    border-top: solid 1px var(--accent-color-shade);
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    /* justify-content: center; */
+    width: 100%;
+    padding-top: 20px;
+}
+
+footer img{
+    width: 6rem;
+}
+
+footer nav{
+    width: max-content;
+}
+
+footer nav a{
+    color: var(--neutral-color);
+    text-decoration: none;
+    margin: 0px 0.5rem;
+}
+
+h2{
+    color: var(--accent-color-shade);
+    font-family: var(--mono-font);
+    font-weight: 1.1rem;
+}
