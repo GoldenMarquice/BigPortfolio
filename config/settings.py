@@ -29,6 +29,19 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+# EMAIL_HOST_USER = '6deeec8fd3982f'
+# EMAIL_HOST_PASSWORD = '90c9f5101595a7'
+# EMAIL_PORT = '2525'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = 'usmcmarquice@gmail.com'  # Your Gmail email address
+EMAIL_HOST_PASSWORD = 'mamh ecsr hhqe qtkq'  # Your Gmail password or an App Password
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,6 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    'experiences',
+    'projects'
 ]
 
 MIDDLEWARE = [
